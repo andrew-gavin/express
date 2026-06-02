@@ -1,6 +1,6 @@
 services:
   express:
-    image: express
+    image: agavin25/express
     ports:
     - 8080:8080
 
