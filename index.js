@@ -5,7 +5,8 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello World! Have a great day!  :) </h1>')
 })
 
-const PORT = 8080
+// Use Heroku's dynamic port or default to 8080 locally
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
