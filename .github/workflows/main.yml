@@ -36,6 +36,5 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.15.15
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "YOUR APP's NAME"
+        heroku_app_name: "express-app"
         heroku_email: "YOUR EMAIL"
-        team: "THE TEAM's NAME"
