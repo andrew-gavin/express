@@ -28,13 +28,9 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/express
 
-    - name: Install Heroku CLI # <- IMPORTANT!!! Make sure the cli is installed before using the action
-      run: |
-        curl https://cli-assets.heroku.com/install.sh | sh
-
-    - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.15.15
+    - name: Heroku Flow Deploy
+      uses: heroku-reference-apps/github-heroku-flow-action@main
       with:
-        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "express-app"
-        heroku_email: "YOUR EMAIL"
+        heroku-api-key: ${{secrets.HEROKU_API_KEY}}
+        heroku-app-name: "express-app"
+        action: 'push'
