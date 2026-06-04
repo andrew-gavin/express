@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World! Have a great day!  :) </h1>')
+  res.send('<h1>Hello World! Have a very good day!  :) </h1>')
 })
 
 // Use Heroku's dynamic port or default to 8080 locally

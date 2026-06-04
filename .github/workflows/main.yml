@@ -33,4 +33,3 @@ jobs:
       with:
         heroku-api-key: ${{secrets.HEROKU_API_KEY}}
         heroku-app-name: "express-app"
-        action: 'push'
